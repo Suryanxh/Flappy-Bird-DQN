@@ -38,3 +38,16 @@ Flapp-Bird/
 ├── README.md                # Project documentation
 │
 └── runs/                    # Saved models and logs
+
+## How It Works
+The agent follows the DQN reinforcement learning pipeline:
+
+-Observe the current game state.
+-Select an action using epsilon-greedy exploration.
+-Execute the action in the environment.
+-Receive a reward and the next state.
+-Store the experience in replay memory.
+-Sample mini-batches from replay memory.
+-Train the policy network.
+-Periodically synchronize the target network.
+-Save the best-performing model.
